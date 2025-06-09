@@ -11,8 +11,11 @@
 <body>
     <header>
         <nav class="navbar">
+            <img src="./images/icon-menu.svg" alt="menu" class="menu-btn">
             <img src="./images/logo.svg" alt="logo" class="brand-logo">
+            <div class="mobile-menu-overlay"></div>
             <ul class="nav-link">
+                <img src="./images/icon-close.svg" alt="close" class="close-menu">
                 <li>Collections</li>
                 <li>Men</li>
                 <li>Women</li>
@@ -20,7 +23,18 @@
                 <li>Contact</li>
             </ul>
             <div class="cart-icon">
-                <img src="./images/icon-cart.svg" alt="cart">
+                <div class="cart-wrapper">
+                    <div class="cart-count">0</div>
+                    <img src="./images/icon-cart.svg" alt="cart">
+                </div>
+                <div class="cart-dropdown">
+                    <h3>Cart</h3>
+                    <div class="cart-content">
+                        <p class="empty-cart">Your cart is empty.</p>
+                        <div class="cart-items"></div>
+                    </div>
+                    <button class="checkout-btn">Checkout</button>
+                </div>
                 <img src="./images/image-avatar.png" alt="avatar">
             </div>
         </nav>
@@ -31,6 +45,14 @@
             <div class="content3">
                 <div class="container1">
                     <img src="./images/image-product-1.jpg" alt="product">
+                    <div class="product-nav">
+                        <div class="nav-btn prev">
+                            <img src="./images/icon-previous.svg" alt="previous">
+                        </div>
+                        <div class="nav-btn next">
+                            <img src="./images/icon-next.svg" alt="next">
+                        </div>
+                    </div>
                 </div>
                 <div class="thumbnail-container">
                     <img src="./images/image-product-1-thumbnail.jpg" alt="thumbnail 1">
