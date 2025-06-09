@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title> E-commerce product page</title>
-  <link rel="stylesheet" href="./design/style.css"> <!-- link to the CSS file -->
-  <link href="https://fonts.google.com/specimen/Kumbh+Sans">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>E-commerce product page</title>
+    <link rel="stylesheet" href="./design/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <nav class="navbar">
-    <img src="./images/logo.svg" alt="logo" class="brand-logo">
-    <img src="./images/icon-menu.svg" alt="menu" class="menu">
-    <img src="./images/icon-close.svg" alt="close" class="close">
-    <ul class="nav-link">
-      <li>Collections</li>
-      <li>Men</li>
-      <li>Women</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
-    <div class="cart-icon">
-      <img src="./images/icon-cart.svg" alt="cart">
-      <img src="./images/image-avatar.png" alt="avatar" 20x0>
-    </div>
-  </nav>
-</header>
-<main class="content">
-  <section class="section1">
+    <header>
+        <nav class="navbar">
+            <img src="./images/logo.svg" alt="logo" class="brand-logo">
+            <ul class="nav-link">
+                <li>Collections</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <div class="cart-icon">
+                <img src="./images/icon-cart.svg" alt="cart">
+                <img src="./images/image-avatar.png" alt="avatar">
+            </div>
+        </nav>
+    </header>
 
-    <div class="content2">
-      <h2>Sneaker Company</h2>
-      <h3>Fall Limited Edition Sneakers</h3>
+    <main class="content">
+        <section class="product-gallery">
+            <div class="content3">
+                <div class="container1">
+                    <img src="./images/image-product-1.jpg" alt="product">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="thumbnail 1">
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="thumbnail 2">
+                    <img src="./images/image-product-3-thumbnail.jpg" alt="thumbnail 3">
+                    <img src="./images/image-product-4-thumbnail.jpg" alt="thumbnail 4">
+                </div>
+            </div>
+        </section>
 
-      <p class="section-decription">These low-profile sneakers are your perfect casual wear companion. Featuring a
-        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-      <h4>$125.00</h4>
-      <h5>50%</h5>
-      <h6>$250.00</h6>
-    </div>
+        <section class="product-info">
+            <div class="content2">
+                <h2>Sneaker Company</h2>
+                <h3>Fall Limited Edition Sneakers</h3>
+                <p class="section-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
 
-    <div class="icon">
-      <img src="./images/icon-minus.svg">
-            <p>0</p>
-      <img src="./images/icon-plus.svg">
-    </div>
-    <div class="button">
-      <button class="btn" >Add to cart</button>
-    </div>
+                <div class="price-container">
+                    <h4>$125.00</h4>
+                    <h5>50%</h5>
+                </div>
+                <h6>$250.00</h6>
 
-    <div class="content3">
-        <div class="container1"><img src="./images/image-product-1.jpg" alt="product" height="400" width="500"></div>
-        <div class="container2"><img src="./images/image-product-1-thumbnail.jpg"></div>
-        <div class="container3"><img src="./images/image-product-2-thumbnail.jpg"></div>
-        <div class="container4"><img src="./images/image-product-3-thumbnail.jpg"></div>
-        <div class="container5"><img src="./images/image-product-4-thumbnail.jpg"></div>
-    </div>
-  </section>
-</main>
-<script src="./script.js"></script>
+                <div class="icon">
+                    <img src="./images/icon-minus.svg" alt="minus">
+                    <p>0</p>
+                    <img src="./images/icon-plus.svg" alt="plus">
+                </div>
+
+                <button class="btn">
+                    <img src="./images/icon-cart.svg" alt="cart">
+                    Add to cart
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>

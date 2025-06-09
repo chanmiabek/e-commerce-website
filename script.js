@@ -51,3 +51,39 @@ addToCartButton.addEventListener('click', () => {
 
 // Initialize cart count display
 updateCartCount();
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Product quantity counter
+    const minusBtn = document.querySelector('.icon img[alt="minus"]');
+    const plusBtn = document.querySelector('.icon img[alt="plus"]');
+    const quantityDisplay = document.querySelector('.icon p');
+    let quantity = 0;
+
+    minusBtn.addEventListener('click', () => {
+        if (quantity > 0) {
+            quantity--;
+            quantityDisplay.textContent = quantity;
+        }
+    });
+
+    plusBtn.addEventListener('click', () => {
+        quantity++;
+        quantityDisplay.textContent = quantity;
+    });
+
+    // Product gallery
+    const mainImage = document.querySelector('.container1 img');
+    const thumbnails = document.querySelectorAll('.thumbnail-container img');
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', () => {
+            // Get the main image source from the thumbnail
+            const newMainSrc = thumbnail.src.replace('-thumbnail', '');
+            mainImage.src = newMainSrc;
+
+            // Update active thumbnail
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            thumbnail.classList.add('active');
+        });
+    });
+});
